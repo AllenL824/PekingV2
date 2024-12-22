@@ -49,6 +49,7 @@ public class PekingV2
             MenuItem selectedItem = null;
             for (MenuItem item : menu)
             {
+                //takes ietm number or name
                 if (enteredItem.toLowerCase().equals(item.getItemNumber().toLowerCase())) {
                     selectedItem = item;
                     break;
@@ -59,7 +60,7 @@ public class PekingV2
                 }
                 
             }
-            
+
             if (selectedItem != null) {
                 System.out.println("Enter quantity: ");
                 int quantity = scanner.nextInt();
